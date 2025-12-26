@@ -1,0 +1,10 @@
+Locus Tag,Motif,Functional Category,Putative Annotation,Accession,E-Value,Sequence Identity
+Target_01,gggggt,Hypothetical Protein,Uncharacterized Protein,SIM87470,7.99e-131,98.4%
+Target_02,gtggtg,Transcriptional Regulator,Transcriptional Regulator Tetr,SKO11951,2.38e-174,97.6%
+Target_03,ggtggg,Hypothetical Protein,Uncharacterized Protein,SLD21260,2.27e-88,97.8%
+Target_04,cggtgg,Lipid Transporter,Membrane Protein Mmpl10,SHU38763,6.05e-142,100.0%
+Target_05,gcggct,Transcriptional Regulator,Transcriptional Regulator Tetr,SKO11951,3.17e-174,97.6%
+Target_07,ggcgct,Transcriptional Regulator,Possible Transcriptional Regulatory Protein Tetr,SIK46006,1.93e-168,99.6%
+Target_08,tgcggt,Lipid Transporter,Mmpl Family Protein,EUA77721,0.0,100.0%
+Target_09,tcgagg,Transcriptional Regulator,Transcriptional Regulator Tetr,SKO11951,2.47e-174,97.6%
+Target_10,gtggat,Transcriptional Regulator,Transcriptional Regulator Tetr,SKO11951,2.38e-174,97.6%
