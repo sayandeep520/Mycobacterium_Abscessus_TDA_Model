@@ -64,6 +64,67 @@ To determine the *cause* of the switch, we modeled the population dynamics as a 
 $$\dot{x} = x(1-x)(b - c)$$
 4. **Bifurcation Analysis:** We simulated the system under varying bacterial loads ($N$) to identify the **Tipping Point**—the critical density at which the metabolic cost of the Smooth phenotype outweighs its benefits, rendering the switch to Roughness irreversible.
 ---
+## 📊 Key Findings
+
+### **1. Genomic Evidence: The "Quantum Slippage" Mechanism**
+
+Using high-throughput -mer entropy scanning () across 260 clinical isolates, we identified the specific genetic lesion driving the phenotype switch.
+
+* **The Driver:** A hyper-unstable Poly-G tract within the *mmpL* lipid transporter gene acts as a binary toggle.
+* **The Data:** `Table_1_Genomic_Validation.csv` confirms that **100% of Rough isolates** possess specific frameshift mutations in the *mmpL10* or *TetR* regulators, functionally disabling lipid transport.
+* **The Proof:** `Fig_1_Genomic_PCA_Clusters.png` reveals that these mutations create a mathematically distinct population cluster. This is further validated by `Fig_2_Comparative_Persistence.png`, which contrasts the unique "Loop" topology of *M. abscessus* against the clonal "Tree" structure of *M. tuberculosis*.
+
+### **2. Biophysical Topology: The "Fortress" Architecture**
+
+We applied Persistent Homology to model the structural consequences of the genomic collapse.
+
+* **The Structure:** `Fig_3_Topological_Barcode.png` identifies significant  homology features (loops) in the Rough variant. This confirms the formation of a rigid, self-enclosed "Fortress" biofilm topology that physically excludes antibiotics.
+* **The Dynamics:** `Fig_4` and `Fig_5` map the evolutionary phase space, demonstrating that the "Fortress" state is a low-energy attractor that emerges inevitably when the system is under stress.
+
+### **3. Evolutionary Synthesis: The Metabolic Trap**
+
+Using Evolutionary Game Theory (Replicator Dynamics), we determined *why* this switch occurs.
+
+* **The Cost:** The Smooth phenotype pays a metabolic tax of **ATP/unit** to synthesize surface lipids.
+* **The Tipping Point:** `Fig_6_Bifurcation_TippingPoint.png` identifies the critical bacterial load ($N$) where this cost becomes unsustainable. Beyond this threshold, the population is mathematically forced to "defect" to the energy-efficient Rough state.
+* **Clinical Application:** `Fig_7_Clinical_Risk_Dashboard.png` translates these dynamics into a probability model, predicting the onset of chronic resistance based on viral load.
+
+---
+
+## 🛠️ Reproducibility
+
+To replicate these findings, clone this repository and execute the notebooks in sequential order (01  02  03).
+
+### **1. Environment Setup**
+
+This project requires **Python 3.10+**. Note that `giotto-tda` requires a specific NumPy version to avoid build conflicts.
+
+```bash
+# Clone the repository
+git clone https://github.com/YourUsername/M_abscessus_Rough_Switch.git
+cd M_abscessus_Rough_Switch
+
+# Install Dependencies
+pip install numpy==1.26.4
+pip install giotto-tda cobra biopython scikit-learn pandas matplotlib
+
+```
+
+### **2. Execution Order**
+
+* **Step 1:** Run `/01_Genomic_Evidence/01_Genotype_Mechanisms.ipynb` to generate the entropy scans and extract the *mmpL* mutations.
+* **Step 2:** Run `/02_Biophysics_Topology/02_Phenotype_Topology.ipynb` to perform the TDA filtration and generate the topological barcodes.
+* **Step 3:** Run `/03_Clinical_Synthesis/03_Evolutionary_Synthesis.ipynb` to simulate the Replicator Dynamics and generate the clinical risk dashboard.
+
+---
+
+## 📜 Citation
+
+If you utilize this code, data, or the "MmpL Collapse" theoretical framework in your research, please cite the associated work:
+
+> **Sayan Deep Bera.** *Genomic and Topological Drivers of the Mycobacterium abscessus Rough-Morphotype Transition.*, Amrita School of Nanoscience and Molecular Medicine, 2025.
+
+---
 
 ## 📂 Repository Structure
 
