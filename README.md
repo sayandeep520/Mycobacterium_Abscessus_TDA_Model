@@ -122,7 +122,7 @@ pip install giotto-tda cobra biopython scikit-learn pandas matplotlib
 
 If you utilize this code, data, or the "MmpL Collapse" theoretical framework in your research, please cite the associated work:
 
-> **Sayan Deep Bera.** *Genomic and Topological Drivers of the Mycobacterium abscessus Rough-Morphotype Transition.*, Amrita School of Nanoscience and Molecular Medicine, 2025.
+> **Sayan Deep Bera.** *The "MmpL Collapse": Genomic Entropy and Evolutionary Game Theory Reveal the Mechanism of Mycobacterial Drug Resistance.*, Amrita School of Nanoscience and Molecular Medicine, 2025.
 
 ---
 
